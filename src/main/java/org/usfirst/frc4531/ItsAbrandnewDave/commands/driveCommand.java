@@ -11,7 +11,7 @@
 
 package org.usfirst.frc4531.ItsAbrandnewDave.commands;
 import edu.wpi.first.wpilibj.command.Command;
-import org.usfirst.frc4531.ItsAbrandnewDave.Robot;
+import org.usfirst.frc4531.ItsAbrandnewDave.Robot; //import the Robot class file to make calling functions from it easier
 
 /**
  *
@@ -44,6 +44,7 @@ public class driveCommand extends Command {
     @Override
     protected void execute() {
         Robot.driveSubsystem.robotDrive41.arcadeDrive(Robot.oi.joyStick.getRawAxis(2), Robot.oi.joyStick.getRawAxis(1));
+        //Basic Joystick controls.
         }
 
     // Make this return true when this Command no longer needs to run execute()
