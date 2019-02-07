@@ -110,7 +110,8 @@ public class Robot extends TimedRobot {
     public void teleopInit() {
         Robot.driveSubsystem.canThree.follow(Robot.driveSubsystem.canOne);
         Robot.driveSubsystem.canSix.follow(Robot.driveSubsystem.canFour);
-        Robot.grabberMech.canSeven.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative);
+        Robot.climbBack.canSeven.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative);
+        Robot.climbFront.canSeven.configSelectedFeedbackSensor(FeedbackDevice.CTRE_MagEncoder_Relative);
 
         // This makes sure that the autonomous stops running when
         // teleop starts running. If you want the autonomous to
